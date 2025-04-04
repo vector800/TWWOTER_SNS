@@ -11,17 +11,8 @@
   </head>
 
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "Twotter", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Top",   '#' %></li>
-            <li><%= link_to "投稿一覧", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- headerの内容がこの1行で収まる -->
+    <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
     </div>
